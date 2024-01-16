@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Answer</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body
+        {
+            padding: 1rem;
+        }
+        .Container
+        {
+            display: grid;
+            grid-template-columns: repeat(6,100px);
+            grid-gap: 70px;
+            width: 1100px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+        .Item
+        {
+            border: 1px solid black;
+            border-radius: 10px;
+            font-size: 150%;
+            text-align: center;
+             padding: 1rem;
+             margin: 10px; 
+             background-color: #444;
+             color: #fff;
+             order: 1;
+             width:150px;
+             height: 100px;
+             
+            
+        }
+        .Item:nth-child(even)
+        {
+            color: #444;
+            background-color: #6d666686;
+            border: 1px solid silver;
+        }
+        #Item1
+        {
+            order: 3;
+           
+        }
+        #Item2
+        {
+            order: 6; 
+        }
+        #Item3
+        {
+            order: 1;
+        }
+
+    </style>
+
+</head>
+<body>
+ <div class="Container">
+       <div class="Item" id="Item1">1</div>
+       <div class="Item" id="Item2">2</div>
+       <div class="Item" id="Item3">3</div>
+       <div class="Item" id="Item4">4</div>
+       <div class="Item" id="Item5">5</div>
+       <div class="Item" id="Item6">6</div>
+       <div class="Item" id="Item7">7</div>
+       <div class="Item" id="Item8">8</div>
+
+ </div>
+    
+</body>
+</html>
